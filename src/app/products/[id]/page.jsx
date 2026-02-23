@@ -16,7 +16,7 @@ export default function ProductDetailsPage() {
   if (!product) return null;
 
   return (
-    <main className="bg-[#EAEAEA] min-h-screen pb-24">
+    <main className="min-h-screen pb-24">
       <div className="container pt-8">
         
         {/* Main Grid */}

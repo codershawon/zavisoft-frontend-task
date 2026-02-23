@@ -54,8 +54,10 @@ export default function ReviewsSection() {
 
       {/* Grid: 1 column on mobile, 3 columns on desktop */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {REVIEWS_DATA.map((review) => (
-          <ReviewCard key={review.id} review={review} />
+        {REVIEWS_DATA.map((review, index) => (
+          <div key={review.id} className={index > 0 ? "hidden md:block" : ""}>
+            <ReviewCard review={review} />
+          </div>
         ))}
       </div>
 

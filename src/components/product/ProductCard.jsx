@@ -24,7 +24,6 @@ export default function ProductCard({ product }) {
             src={imgSrc}
             alt={product.title}
             fill
-            className="object-contain"
             sizes="(max-width: 768px) 50vw, 25vw"
             unoptimized={true}
             onError={() => {
@@ -37,7 +36,7 @@ export default function ProductCard({ product }) {
       {/* Product Info */}
       <div className="flex flex-col gap-3">
         {/* product.title */}
-        <h3 className="font-black text-base md:text-lg text-[#232321] uppercase leading-tight line-clamp-3 md:line-clamp-2 min-h-9.5 md:min-h-11">
+        <h3 className="font-black text-base md:text-lg text-[#232321] uppercase line-clamp-3 md:line-clamp-2 min-h-9.5 md:min-h-11">
           {product.title}
         </h3>
         
@@ -54,3 +53,5 @@ export default function ProductCard({ product }) {
     </div>
   );
 }
+
+

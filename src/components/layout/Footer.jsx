@@ -115,7 +115,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="w-full text-center py-6 md:py-8 text-[#232321]/70 font-medium text-sm md:text-base">
+      <div className="copyright w-full text-center py-6 md:py-8 text-[#232321]/70 font-medium text-sm md:text-base">
         © All rights reserved
       </div>
     </footer>

@@ -14,8 +14,8 @@ export default function NewDropsSection() {
     <section className="container py-12 md:py-20">
       
       {/* Top Header: Title & Button */}
-      <div className="flex justify-between items-start md:items-end mb-10 gap-6">
-        <h2 className="text-2xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter md:tracking-normal text-[#232321]">
+      <div className="flex justify-between items-center md:items-end mb-10 gap-6">
+        <h2 className="text-2xl md:text-7xl font-black uppercase text-[#232321]">
           DON&apos;T MISS OUT <br />
           <span className="text-[#232321]">NEW DROPS</span>
         </h2>

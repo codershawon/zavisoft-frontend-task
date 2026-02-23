@@ -33,7 +33,7 @@ export default function RelatedProducts() {
   if (!products || products.length === 0) return null;
 
   return (
-    <section className="mt-6 md:mt-32 w-full">
+    <section className="related-products mt-6 md:mt-32 w-full">
       
       {/* Header Section */}
       <div className="flex justify-between items-center mb-10">
