@@ -1,5 +1,5 @@
 # KICKS - Next.js E-Commerce Storefront
-A high-performance, responsive e-commerce frontend that demonstrates modern React architecture, dynamic routing, and advanced UI/UX.
+A high-performance, responsive e-commerce frontend that demonstrates modern React architecture, dynamic routing, and advanced UI/UX
 
 **[Live Demo]** `[https://zavisoft-frontend-task-one.vercel.app]`  
 **[Repository]** `[https://github.com/codershawon/zavisoft-frontend-task.git]`
@@ -99,3 +99,4 @@ Frontend Web Developer
 LinkedIn: [https://www.linkedin.com/in/dev-shawon/]
 
 Portfolio: [https://shawonbarua.netlify.app]
+
