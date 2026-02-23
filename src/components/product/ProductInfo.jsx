@@ -21,7 +21,7 @@ export default function ProductInfo({ product }) {
         <span className="bg-[#4A69E2] text-white text-xs font-bold px-3 py-1.5 rounded-md w-fit">
           {product.category?.name || "New Release"}
         </span>
-        <h1 className="text-3xl md:text-[32px] font-black text-[#232321] uppercase">
+        <h1 className="text-xl md:text-[32px] font-black text-[#232321] uppercase">
           {product.title}
         </h1>
         <span className="text-2xl font-black text-[#4A69E2]">

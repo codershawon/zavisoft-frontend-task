@@ -33,7 +33,7 @@ export default function RelatedProducts() {
   if (!products || products.length === 0) return null;
 
   return (
-    <section className="mt-24 md:mt-32 w-full">
+    <section className="mt-6 md:mt-32 w-full">
       
       {/* Header Section */}
       <div className="flex justify-between items-center mb-10">
@@ -69,7 +69,7 @@ export default function RelatedProducts() {
           slidesPerGroup={2}
           spaceBetween={12} 
           pagination={{ clickable: true }}
-          className="pb-16!"
+          className="pb-6!"
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
