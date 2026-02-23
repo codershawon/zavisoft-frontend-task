@@ -49,16 +49,16 @@ export default function CategoriesSliderSection() {
         {error && <ErrorState message={error} />}
 
         {!isLoading && !error && categories.length > 0 && (
-          <div className="w-full pb-12"> 
+          <div className="w-[calc(50%+50vw)]"> 
             <Swiper
               onBeforeInit={(swiper) => {
                 swiperRef.current = swiper;
               }}
               modules={[Navigation]}
               spaceBetween={0}
-              slidesPerView={1}
+              slidesPerView={1.2} 
               breakpoints={{
-                768: { slidesPerView: 2 },
+                768: { slidesPerView: 2.2 },
               }}
               className="rounded-tl-[48px] overflow-hidden bg-[#F3F4F6]"
             >
@@ -75,3 +75,4 @@ export default function CategoriesSliderSection() {
     </section>
   );
 }
+

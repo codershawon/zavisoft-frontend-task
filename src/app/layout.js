@@ -2,6 +2,7 @@ import { Rubik } from 'next/font/google';
 import './globals.css';
 import { CartProvider } from '@/context/CartContext';
 import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 const rubik = Rubik({ 
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <CartProvider>
           <Navbar />
         {children}
+        <Footer/>
         </CartProvider>
       </body>
     </html>

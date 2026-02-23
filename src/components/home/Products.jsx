@@ -8,7 +8,7 @@ import { useProducts } from "@/hooks/useProducts";
 import ProductCard from "../product/ProductCard";
 
 export default function NewDropsSection() {
-  const { products, isLoading, error } = useProducts();
+  const { products, isLoading, error } = useProducts({ limit: 4 });
 
   return (
     <section className="container py-12 md:py-20">
@@ -25,7 +25,6 @@ export default function NewDropsSection() {
         </Button>
       </div>
 
-      {/* Dynamic Content Rendering based on State */}
       {isLoading && <Loader />}
       
       {error && <ErrorState message={error} />}

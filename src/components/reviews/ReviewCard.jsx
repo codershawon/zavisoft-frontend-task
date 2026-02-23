@@ -11,10 +11,16 @@ export default function ReviewCard({ review }) {
       <div className="p-6 md:p-8 flex flex-col grow">
         
         {/* Header: Title & Avatar */}
-        <div className="flex justify-between items-start mb-4 gap-4">
-          <h3 className="font-black text-xl md:text-2xl text-[#232321] leading-tight">
-            {review.title}
-          </h3>
+        <div className="flex justify-between items-start mb-2 gap-2">
+          <div>
+              <h3 className="font-black text-xl md:text-2xl text-[#232321] leading-tight">
+                {review.title}
+              </h3>
+              {/* Comment */}
+            <p className="text-gray-500 text-sm md:text-base mt-2 line-clamp-3">
+              {review.comment}
+            </p>
+          </div>
           <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden shrink-0 bg-gray-200">
             <Image 
               src={review.userAvatar} 
@@ -26,18 +32,13 @@ export default function ReviewCard({ review }) {
           </div>
         </div>
 
-        {/* Comment */}
-        <p className="text-gray-500 text-sm md:text-base font-medium mb-6 line-clamp-3">
-          {review.comment}
-        </p>
-
         <div className="flex items-center gap-2 mt-auto">
           <div className="flex gap-1">
             {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className="text-[#FFA52F] w-4 h-4 md:w-5 md:h-5" />
+              <FaStar key={i} className="text-[#FFA52F] w-4 h-6" />
             ))}
           </div>
-          <span className="font-bold text-[#232321] text-sm md:text-base">
+          <span className="text-[#232321] text-sm md:text-base">
             {review.rating.toFixed(1)}
           </span>
         </div>

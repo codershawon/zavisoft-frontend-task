@@ -10,3 +10,35 @@
   margin-inline: auto;
   padding-inline: 1rem;
 }
+
+/* Slider CSS */
+.swiper-pagination-bullets {
+  bottom: 0px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 32px !important;
+  height: 4px !important;
+  border-radius: 4px !important;
+  background: #D1D5DB !important;
+  opacity: 1 !important;
+  margin: 0 4px !important;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4A69E2 !important;
+}
+
+.swiper-grid > .swiper-wrapper > .swiper-slide {
+  height: auto !important;
+  margin-top: 0 !important;
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.md\:hidden .swiper-slide {
+  margin-bottom: 16px !important; 
+}
